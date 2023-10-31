@@ -32,8 +32,18 @@
         let persons = {};
         let lastbtn = document.getElementById("btn");
         function addNewinputs () {
-            document.
+            document.getElementById("pattern").innerHTML += "<br/><input type= 'text' class = 'fname'><input class='lname' type='text'><input type='button' value='+' id='btn'></b>"
+            document.getElementById('btn').disabled = true ;
+            document,getElementById('btn').id = "btn_disabled" ;
+            lastbtn = document.getElementById('btn');
+            newEvent();
         }
+
+        function newEvent() {
+            lastbtn.addEventListener("click" , addNewinputs);
+        }
+
+        newEvent();
     </script>
 </body>
 </html>
