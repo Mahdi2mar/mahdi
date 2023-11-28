@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge 2</title>
+    <style>
+     .s1{
+        background-color: lightgray;
+        }
+   section{
+            background-color: rgb(36, 144, 216);
+            display: flex;
+            flex-wrap: wrap;
+          }
+          article{
+
+            background-color: white;
+            margin: 15px; 
+             padding: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="s1">
+      <b>challenge 2</b>
+    </section>
+    <section>
+        <article id="a1">
+            <b>box 1</b><br>
+            <input id="in1" type="text" style=" width: 80px; " >
+            <input id="btn1" type="button" value="ok" style=" width: 88px; " >
+        </article>
+        <article id="a2">
+            <b>box 2</b>
+
+            <input id="in2" type="text" style=" width: 80px; " >
+            <input id="btn2" type="button" value="ok" style=" width: 88px; " >
+        </article>
+        <article id="a3">
+            <b>box 3</b><br>
+
+            <input id="in3" type="text" style=" width: 80px; " >
+            <input id="btn3" type="button" value="ok" style=" width: 88px; " >
+        </article>
+        <article id="a4">
+            <b>box 4</b><br>
+
+            <input id="in4" type="text" style=" width: 80px; " >
+            <input id="btn4" type="button" value="ok" style=" width: 88px; " >
+        </article>
+        <article id="a5">
+            <b>box 5</b><br>
+
+            <input id="in5" type="text" style=" width: 80px; " >
+            <input id="btn5" type="button" value="ok" style=" width: 88px; " >
+
+        </article>
+        <article id="a6">
+            <b>box 6</b><br>
+
+            <input id="in6" type="text" style=" width: 80px; " >
+            <input id="btn6" type="button" value="ok" style=" width: 88px; " >
+
+        </article>
+    </section>
+
+    <script>
+         document.getElementById("btn1").addEventListener('click', function () {
+            document.getElementById("a1").style.backgroundColor
+                = document.getElementById("in1").value;
+        });
+        document.getElementById("btn2").addEventListener('click', function () {
+            document.getElementById("a2").style.backgroundColor
+                = document.getElementById("in2").value;
+        });
+        document.getElementById("btn3").addEventListener('click', function () {
+            document.getElementById("a3").style.backgroundColor
+                = document.getElementById("in3").value;
+        });
+        document.getElementById("btn4").addEventListener('click', function () {
+            document.getElementById("a4").style.backgroundColor
+                = document.getElementById("in4").value;
+        });
+        document.getElementById("btn5").addEventListener('click', function () {
+            document.getElementById("a5").style.backgroundColor
+                = document.getElementById("in5").value;
+        });
+        document.getElementById("btn6").addEventListener('click', function () {
+            document.getElementById("a6").style.backgroundColor
+                = document.getElementById("in6").value;
+        });
+    </script>
+</body>
+</html>
